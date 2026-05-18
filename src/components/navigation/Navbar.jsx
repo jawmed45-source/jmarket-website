@@ -1,18 +1,20 @@
 import React, { useContext, useRef } from 'react'
 import { NavbarContext } from '../../context/Navcontext'
+import { NavbarColorContext } from '../../context/Navcontext'
 
 const Navbar = () => {
   const navGreenRef = useRef(null)
   const navGreenline1 = useRef(null)
   const navGreenline2 = useRef(null)
   const { NavOpen, setNavOpen } = useContext(NavbarContext)
+  const { NavColor, setNavColor } = useContext(NavbarColorContext)
 
   
 
   return (
     <div className='z-4  flex justify-between items-start top-0 fixed w-full'>
       <div className='w-15 h-10 lg:m-4 m-2'>
-        <img src="/images/logo.png" alt="Logo" className=' h-full w-full' />
+        <img src={NavColor} alt="Logo" className=' h-full w-full' />
       </div>
       <div onClick={()=>{
         setNavOpen(true)
