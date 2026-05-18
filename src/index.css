@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: font1;
+    src: url(../fonts/Lausanne-300.woff2);
+}
+@font-face {
+    font-family: font2;
+    src: url(../fonts/Lausanne-300.woff2);
+}
+
+.link{
+    overflow: hidden;
+}
+/* .moveX{
+    animation-name: moveAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+} */
+.moveLink{
+    opacity: 0;
+
+    display: flex;
+    width: max-content; /* let it stretch naturally */
+    animation: moveAnimation 9s linear infinite;
+}
+.link:hover .moveLink{
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+
+@keyframes moveAnimation {
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-50%);
+    }
+}
+
+
+.marqueeBack {
+    opacity: 1;
+  display: flex;
+  flex-wrap: nowrap;
+  animation: marqueeLTR 13s linear infinite;
+}
+
+.marqueeFront {
+    opacity: 1;
+  display: flex;
+  flex-wrap: nowrap;
+  animation: marqueeRTL 13s linear infinite;
+
+}
+
+@keyframes marqueeLTR {
+  from { transform: translateX(-100%); }
+  to   { transform: translateX(0); }
+}
+
+/* Right to Left */
+@keyframes marqueeRTL {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-100%); }
+}
