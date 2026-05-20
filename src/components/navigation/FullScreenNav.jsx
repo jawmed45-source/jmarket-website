@@ -142,16 +142,16 @@ const FullScreenNav = () => {
 
         <div className=''>
           <div className='h-full origin-top link relative border-t-1 border-white lg:mt-0 mt-30'>
-            <h1 className='font-[font2] lg:text-[6vw] text-[12vw] text-center uppercase font-semibold '>projects</h1>
+            <h1 className='font-[font2] lg:text-[6vw] text-[12vw] text-center uppercase font-semibold   ' >projects</h1>
             <div className=' moveLink absolute flex top-0 bg-[#D3FD50] text-black'>
-              <div className='moveX flex items-center'>
+              <div className='moveX flex items-center cursor-pointer' >
                 <h2 className='whitespace-nowrap font-[font2] text-[6vw] text-center uppercase font-semibold '>See Everything</h2>
                 <img className='h-17 w-60 object-cover rounded-full shrink-0' src="/images/jawad1.png" alt="" />
                 <h2 className='whitespace-nowrap  font-[font2] text-[6vw] text-center uppercase font-semibold '>See Everything</h2>
                 <img className='h-17 w-60 object-cover rounded-full shrink-0' src="/images/mannan.png" alt="" />
 
               </div>
-              <div className='moveX flex items-center'>
+              <div className='moveX flex items-center cursor-pointer'>
                 <h2 className='whitespace-nowrap font-[font2] text-[6vw] text-center uppercase font-semibold '>See Everything</h2>
                 <img className='h-17 w-60 object-cover rounded-full shrink-0' src="/images/jawad1.png" alt="" />
                 <h2 className='whitespace-nowrap  font-[font2] text-[6vw] text-center uppercase font-semibold '>See Everything</h2>
@@ -163,7 +163,7 @@ const FullScreenNav = () => {
           <div className='origin-top link relative border-t-1 border-white'>
             <h1 className='font-[font2] lg:text-[6vw] text-[12vw] text-center uppercase font-semibold '>Agency</h1>
             <div className=' moveLink absolute flex top-0 bg-[#D3FD50] text-black'>
-              <div className='moveX flex items-center'>
+              <div className='moveX flex items-center cursor-pointer'>
                 <h2 className='whitespace-nowrap font-[font2] text-[6vw] text-center uppercase font-semibold '>See Everything</h2>
                 <img className='h-17 w-60 object-cover rounded-full shrink-0' src="/images/jawad1.png" alt="" />
                 <h2 className='whitespace-nowrap  font-[font2] text-[6vw] text-center uppercase font-semibold '>See Everything</h2>
@@ -182,7 +182,7 @@ const FullScreenNav = () => {
           <div className='origin-top link relative border-t-1 border-white'>
             <h1 className='font-[font2] lg:text-[6vw] text-[12vw] text-center uppercase font-semibold '>contact</h1>
             <div className=' moveLink absolute flex top-0 bg-[#D3FD50] text-black'>
-              <div className='moveX flex items-center'>
+              <div className='moveX flex items-center cursor-pointer'>
                 <h2 className='whitespace-nowrap font-[font2] text-[6vw] text-center uppercase font-semibold '>See Everything</h2>
                 <img className='h-17 w-60 object-cover rounded-full shrink-0' src="/images/jawad1.png" alt="" />
                 <h2 className='whitespace-nowrap  font-[font2] text-[6vw] text-center uppercase font-semibold '>See Everything</h2>
@@ -201,7 +201,7 @@ const FullScreenNav = () => {
           <div className='origin-top link relative border-y-1 border-white'>
             <h1 className='font-[font2] lg:text-[6vw] text-[12vw] text-center uppercase font-semibold '>blog</h1>
             <div className=' moveLink absolute flex top-0 bg-[#D3FD50] text-black'>
-              <div className='moveX flex items-center'>
+              <div className='moveX flex items-center cursor-pointer'>
                 <h2 className='whitespace-nowrap font-[font2] text-[6vw] text-center uppercase font-semibold '>See Everything</h2>
                 <img className='h-17 w-60 object-cover rounded-full shrink-0' src="/images/jawad1.png" alt="" />
                 <h2 className='whitespace-nowrap  font-[font2] text-[6vw] text-center uppercase font-semibold '>See Everything</h2>
