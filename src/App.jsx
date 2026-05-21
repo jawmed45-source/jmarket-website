@@ -7,12 +7,13 @@ import Navbar from './components/navigation/Navbar'
 import FullScreenNav from './components/navigation/FullScreenNav'
 import Contact from './pages/Contact'
 import Blog from './pages/Blog'
+import useLenis from "./hooks/useLenis";
 
 
 
 const App = () => {
 
-  
+  useLenis();
 
   return (
     <div className='text-white overflow-x-hidden'>
