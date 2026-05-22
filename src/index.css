@@ -4,14 +4,16 @@
     font-family: font1;
     src: url(../fonts/Lausanne-300.woff2);
 }
+
 @font-face {
     font-family: font2;
     src: url(../fonts/Lausanne-300.woff2);
 }
 
-.link{
+.link {
     overflow: hidden;
 }
+
 /* .moveX{
     animation-name: moveAnimation;
     animation-duration: 5s;
@@ -19,51 +21,97 @@
     animation-timing-function: linear;
 
 } */
-.moveLink{
+.moveLink {
     opacity: 0;
 
     display: flex;
-    width: max-content; /* let it stretch naturally */
+    width: max-content;
+    /* let it stretch naturally */
     animation: moveAnimation 9s linear infinite;
 }
-.link:hover .moveLink{
+
+.link:hover .moveLink {
     opacity: 1;
     transition: all 0.3s ease-in-out;
 }
 
 
 @keyframes moveAnimation {
-    from{
-        transform:translateX(0);
+    from {
+        transform: translateX(0);
     }
-    to{
-        transform:translateX(-50%);
+
+    to {
+        transform: translateX(-50%);
     }
 }
 
 
 .marqueeBack {
     opacity: 1;
-  display: flex;
-  flex-wrap: nowrap;
-  animation: marqueeLTR 13s linear infinite;
+    display: flex;
+    flex-wrap: nowrap;
+    animation: marqueeLTR 13s linear infinite;
 }
 
 .marqueeFront {
     opacity: 1;
-  display: flex;
-  flex-wrap: nowrap;
-  animation: marqueeRTL 13s linear infinite;
+    display: flex;
+    flex-wrap: nowrap;
+    animation: marqueeRTL 13s linear infinite;
 
 }
 
 @keyframes marqueeLTR {
-  from { transform: translateX(-100%); }
-  to   { transform: translateX(0); }
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
 }
 
 /* Right to Left */
 @keyframes marqueeRTL {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-100%); }
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Contact marquee animation */
+.contact {
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Contact staggered fade-in animation */
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadein {
+    animation: fadein 0.6s ease forwards;
+    opacity: 0;
 }
