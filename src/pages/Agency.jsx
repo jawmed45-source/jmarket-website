@@ -110,10 +110,10 @@ const Agency = () => {
 
 
 
-      <div className='h-screen overflow-hidden relative flex items-center justify-center '>
+      <div className='h-[60vh] lg:h-screen overflow-hidden relative flex items-center justify-center '>
 
         {/* BEHIND image — Jawad */}
-        <div className='marqueeBack  absolute lg:text-9xl text-2xl font-semibold w-full flex z-0 lg:top-80 top-70 '>
+        <div className='marqueeBack  absolute lg:text-9xl text-2xl font-semibold w-full flex lg:z-0 z-20 lg:top-80 top-40 '>
           {[...Array(6)].map((_, i) => (
               <h1 key={i} className='whitespace-nowrap shrink-0 text-[#D3FD50] font-[font1]'>
               Jawad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -128,7 +128,7 @@ const Agency = () => {
         </div>
 
         {/* IN FRONT of image — Ahmed + Creative Director */}
-        <div className='marqueeFront absolute w-full font-semibold flex items-center z-20 lg:bottom-80 bottom-70  '>
+        <div className='marqueeFront absolute w-full font-semibold flex items-center z-20 lg:bottom-80 bottom-40  '>
           {[...Array(6)].map((_, i) => (
             
             <div key={i} className='flex items-center shrink-0 gap-6'>
@@ -147,10 +147,10 @@ const Agency = () => {
 
 
 
-      <div className='h-screen overflow-hidden relative flex items-center justify-center'>
+      <div className='h-[60vh] lg:h-screen overflow-hidden relative flex items-center justify-center'>
 
         {/* BEHIND image — Abdul*/}
-        <div className='marqueeBack  absolute lg:text-9xl text-2xl font-semibold w-full flex z-0 lg:top-80 top-70 '>
+        <div className='marqueeBack  absolute lg:text-9xl text-2xl font-semibold w-full flex lg:z-0 z-20 lg:top-80 top-40 '>
           {[...Array(6)].map((_, i) => (
               <h1 key={i} className='whitespace-nowrap shrink-0 text-[#D3FD50] font-[font1]'>
               Abdul&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -165,7 +165,7 @@ const Agency = () => {
         </div>
 
         {/* IN FRONT of image — Abdul + Strategic Planner */}
-        <div className='marqueeFront absolute w-full font-semibold flex items-center z-20 lg:bottom-80 bottom-70 '>
+        <div className='marqueeFront absolute w-full font-semibold flex items-center z-20 lg:bottom-80 bottom-40 '>
           {[...Array(6)].map((_, i) => (
             
             <div key={i} className='flex items-center shrink-0 gap-6'>
@@ -183,10 +183,10 @@ const Agency = () => {
 
 
 
-      <div className='h-screen overflow-hidden relative flex items-center justify-center'>
+      <div className='h-[60vh] lg:h-screen overflow-hidden relative flex items-center justify-center'>
 
         {/* BEHIND image — Abdul */}
-        <div className='marqueeBack  absolute lg:text-9xl text-2xl font-semibold w-full flex z-0 lg:top-80 top-70 '>
+        <div className='marqueeBack  absolute lg:text-9xl text-2xl font-semibold w-full flex lg:z-0 z-20 lg:top-80 top-40 '>
           {[...Array(6)].map((_, i) => (
               <h1 key={i} className='whitespace-nowrap shrink-0 text-[#D3FD50] font-[font1]'>
               Abdul&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -201,7 +201,7 @@ const Agency = () => {
         </div>
 
         {/* IN FRONT of image — Ahmed + Creative Director */}
-        <div className='marqueeFront absolute w-full font-semibold flex items-center z-20 lg:bottom-80 bottom-70  '>
+        <div className='marqueeFront absolute w-full font-semibold flex items-center z-20 lg:bottom-80 bottom-40  '>
           {[...Array(6)].map((_, i) => (
             
             <div key={i} className='flex items-center shrink-0 gap-6'>
