@@ -14,20 +14,20 @@ const Agency = () => {
 
   const imageArray = [
     '/images/mannan.png',
-    '/images/jawad1.png',
-    '/images/moiz2.png',
-    '/images/mannan.png',
     '/images/jawad2.png',
-    '/images/moiz2.png',
-    '/images/mannan.png',
-    '/images/jawad1.png',
-    '/images/moiz2.png',
-    '/images/mannan.png',
-    '/images/jawad1.png',
-    '/images/moiz2.png',
-    '/images/jawad2.png',
-    '/images/mannan.png',
     '/images/moiz1.png',
+    '/images/mannan2.png',
+    '/images/jawad1.png',
+    '/images/moiz2.png',
+    '/images/mannan.png',
+    '/images/jawad2.png',
+    '/images/moiz2.png',
+    '/images/mannan.png',
+    '/images/jawad1.png',
+    '/images/moiz2.png',
+    '/images/jawad2.png',
+    '/images/mannan.png',
+    '/images/moiz2.png',
   ]
 
   useGSAP(function () {
@@ -124,7 +124,7 @@ const Agency = () => {
 
         {/* IMAGE — middle layer */}
         <div className='flex h-full  justify-center items-center relative z-10'>
-          <img className='object-cover lg:h-[80vh] lg:w-[25vw] h-[40vh] w-[40vw] rounded-3xl' src="/images/jawad1.png" alt="" />
+          <img className='object-cover lg:h-[80vh] lg:w-[25vw] h-[40vh] w-[40vw] rounded-3xl' src="/images/jawad2.png" alt="" />
         </div>
 
         {/* IN FRONT of image — Ahmed + Creative Director */}
