@@ -3,6 +3,7 @@ import React, { useContext, useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
 import { NavbarContext } from '../../context/Navcontext'
 import { useNavigate } from 'react-router-dom'
+import Montreal from '../montreal/Montreal'
 
 const FullScreenNav = () => {
   const fullNavLinkRef = useRef(null)
@@ -124,7 +125,7 @@ const FullScreenNav = () => {
   }, [NavOpen])
 
 
-
+   
   return (
     <div ref={fullScreenRef} id='fullscreennav' className='fullscreennav hidden  z-200 h-screen w-full overflow-hidden text-white  absolute'>
       <div className='h-screen w-full fixed'>
@@ -138,7 +139,7 @@ const FullScreenNav = () => {
       </div>
       <div ref={fullNavLinkRef} className='relative '>
         <div className='navlink flex w-full justify-between lg:p-5 py-2 items-start'>
-          <div className='w-15 h-10 m-4'>
+          <div className='w-20 h-14 lg:m-4 m-2'>
             <img src="/images/logo.png" alt="Logo" className=' h-full w-full' />
           </div>
           <div onClick={() => {
@@ -150,14 +151,14 @@ const FullScreenNav = () => {
         </div>
 
         <div className=''>
-          
-          <div id='Projects' className='h-full origin-top link relative border-t-1 border-white lg:mt-0 mt-30'> 
-            <h1  className='font-[font2] lg:text-[6vw] text-[12vw] text-center uppercase font-semibold   ' >projects</h1>
+
+          <div id='Projects' className='h-full origin-top link relative border-t-1 border-white lg:mt-0 mt-30'>
+            <h1 className='font-[font2] lg:text-[6vw] text-[12vw] text-center uppercase font-semibold   ' >projects</h1>
             <div onClick={() => handleNavClick('/projects')} className=' moveLink absolute flex top-0 bg-[#D3FD50] text-black'>
               <div className='moveX flex items-center cursor-pointer' >
                 <h2 className='whitespace-nowrap font-[font2] text-[6vw] text-center uppercase font-semibold '>to See Everything ★</h2>
                 <h2 className='whitespace-nowrap  font-[font2] text-[6vw] text-center uppercase font-semibold '>to See Everything ★</h2>
-                
+
 
               </div>
               <div className='moveX flex items-center cursor-pointer'>
@@ -168,7 +169,7 @@ const FullScreenNav = () => {
             </div>
           </div>
 
-          
+
           <div id='Agency' className='origin-top link relative border-t-1 border-white'>
             <h1 className='font-[font2] lg:text-[6vw] text-[12vw] text-center uppercase font-semibold '>Agency</h1>
             <div onClick={() => handleNavClick('/agency')} className=' moveLink absolute flex top-0 bg-[#D3FD50] text-black'>
@@ -228,6 +229,14 @@ const FullScreenNav = () => {
             </div>
           </div>
         </div>
+
+          <div className='pt-5 pl-5'>
+            <Montreal />
+          </div>
+
+
+        
+
       </div>
     </div>
   )

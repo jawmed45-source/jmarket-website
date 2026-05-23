@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <div className='z-4  flex justify-between items-start top-0 fixed w-full'>
-      <div className='w-15 h-10 lg:m-4 m-2'>
+      <div className='w-22 h-16 lg:m-4 m-2'>
         <img src={NavColor} alt="Logo" className=' h-full w-full' />
       </div>
       <div onClick={()=>{
