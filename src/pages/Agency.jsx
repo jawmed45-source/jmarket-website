@@ -39,7 +39,6 @@ const Agency = () => {
         end: "top -70%",
         pin: true,
         pinSpacing: true,
-        pinReparent: true,
         pinType: 'transform',
         scrub: 1,
         anticipatePin: 1,

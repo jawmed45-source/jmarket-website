@@ -12,7 +12,6 @@ import useLenis from "./hooks/useLenis";
 
 
 const App = () => {
-
   useLenis();
 
   return (

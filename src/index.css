@@ -11,8 +11,11 @@
 }
 
 html, body {
-  overflow-x: hidden;
+ 
   background-color: #000; /* your black background color */
+}
+body{
+     overflow-x: hidden;
 }
 
 

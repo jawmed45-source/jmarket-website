@@ -7,7 +7,6 @@ import Stairs from './components/common/Stairs.jsx';
 import Navcontext from './context/Navcontext.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
     <BrowserRouter>
       <Stairs >
         <Navcontext>
@@ -15,5 +14,5 @@ createRoot(document.getElementById('root')).render(
         </Navcontext>
       </Stairs>
     </BrowserRouter>
-  </StrictMode>,
+  
 )
