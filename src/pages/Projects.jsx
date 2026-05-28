@@ -63,7 +63,7 @@ const Projects = () => {
   }, { scope: containerRef })
 
   return (
-    <div className='lg:p-4 p-2 mb-[100vh] text-black'>
+    <div className='lg:p-4 p-2 mb-[100vh] text-black bg-white'>
       <div className=' pt-[45vh]'>
         <h2 className='font-[font2] lg:text-[9.5vw] text-6xl uppercase'>Projects</h2>
       </div>

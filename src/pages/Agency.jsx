@@ -74,7 +74,7 @@ const Agency = () => {
 
 
   return (
-    <div ref={sectionRef} className='h-full' >
+    <div ref={sectionRef} className='h-full bg-white' >
       <div className='section-1 p-1' >
         <div ref={imageDivRef} className='lg:rounded-3xl rounded-xl absolute overflow-hidden lg:top-65 -top-0 lg:left-[31vw] left-[22vw] lg:h-[19vw] h-[25vw] lg:w-[15vw] w-[20vw]'>
           <img ref={imageRef} className='h-full w-full object-cover' src="/images/mannan.png" alt="" />

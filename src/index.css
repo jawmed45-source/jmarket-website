@@ -10,9 +10,11 @@
     src: url(../fonts/Lausanne-300.woff2);
 }
 
-body {
+html, body {
+  overflow-x: hidden;
   background-color: #000; /* your black background color */
 }
+
 
 .link {
     overflow: hidden;

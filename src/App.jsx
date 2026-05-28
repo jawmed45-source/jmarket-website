@@ -16,7 +16,7 @@ const App = () => {
   useLenis();
 
   return (
-    <div className='text-white overflow-x-hidden'>
+    <div className='text-white '>
 
       
       <Navbar />
