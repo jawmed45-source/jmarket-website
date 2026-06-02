@@ -121,7 +121,7 @@ const Agency = () => {
         <div className=' relative font-[font1] text-black  '>
           <div className=' lg:mt-[14vh] mt-[30vh] overflow-hidden'>
             <h1 className='heading1 text-[20vw] uppercase leading-[16vw] text-center pt-2 '>Minds</h1>
-            <div className=' mt-[0vh] overflow-hidden '>
+            <div className=' mt-[0vh] overflow-hidden pt-2 '>
               <h1 className='heading2 text-[20vw] uppercase leading-[16vw] text-center '>behind it </h1>
                </div>
 
