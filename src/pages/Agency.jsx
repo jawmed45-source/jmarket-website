@@ -37,6 +37,25 @@ const Agency = () => {
       img.src = src
     })
 
+
+
+    gsap.from(".heading1", {
+      y:-400 ,
+      delay: 2,
+    })
+
+    gsap.from(".heading2", {
+      y:-400 ,
+      delay: 2.15,
+    })
+
+    gsap.from(".imageCard", {
+      x: -300,
+      delay: 2.2,
+      duration: 0.5,
+    })
+
+
     gsap.to(imageDivRef.current, {
       scrollTrigger: {
         trigger: imageDivRef.current,
@@ -90,7 +109,7 @@ const Agency = () => {
             <img
               key={i}
               ref={(el) => (imageRefs.current[i] = el)}
-              className='h-full w-full object-cover absolute top-0 left-0'
+              className='imageCard h-full w-full object-cover absolute top-0 left-0'
               style={{ opacity: i === 0 ? 1 : 0, }}
               src={src}
               alt=""
@@ -99,9 +118,13 @@ const Agency = () => {
         </div>
 
         {/* rest of your JSX stays exactly the same */}
-        <div className=' relative font-[font1] text-black'>
-          <div className=' lg:mt-[14vh] mt-[30vh]'>
-            <h1 className='text-[20vw] uppercase leading-[16vw] text-center'>Minds Behind It</h1>
+        <div className=' relative font-[font1] text-black  '>
+          <div className=' lg:mt-[14vh] mt-[30vh] overflow-hidden'>
+            <h1 className='heading1 text-[20vw] uppercase leading-[16vw] text-center pt-2 '>Minds</h1>
+            <div className=' mt-[0vh] overflow-hidden '>
+              <h1 className='heading2 text-[20vw] uppercase leading-[16vw] text-center '>behind it </h1>
+               </div>
+
           </div>
           <div className='lg:pl-[45%] lg:mt-20 py-7 px-4 '>
             <p className='lg:text-[3vw] text-xl lg:leading-[3vw] leading-tight font-semibold'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Our curiosity fuels our creativity. We stay grounded, leave ego behind, and focus on what truly matters. A brand is more than just visuals or marketing — it carries values, character, and a story of its own. Ignoring that may bring temporary success, but it weakens the brand over time. That's why we focus on creating meaningful perspectives and building brands that leave a lasting impact.</p>
