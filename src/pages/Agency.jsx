@@ -28,6 +28,9 @@ const Agency = () => {
     '/images/jawad2.png',
     '/images/mannan.png',
     '/images/moiz2.png',
+    '/images/jawad1.png',
+    '/images/moiz2.png',
+    '/images/jawad2.png',
   ]
 
   useGSAP(function () {
@@ -56,6 +59,76 @@ const Agency = () => {
     })
 
 
+
+    gsap.from(".first1", {
+    scrollTrigger: {
+      trigger: ".first1",
+      start: "top 40%",
+    },
+    y: -45,
+    autoAlpha: 0,
+    delay: 0.1,
+    
+    ease: "power2.out"
+  });
+
+  gsap.from(".first2", {
+    scrollTrigger: {
+      trigger: ".first1",
+      start: "top 40%",
+    },
+    y: -45,
+    autoAlpha: 0,
+    delay: 0.2,
+    
+    ease: "power2.out"
+  });
+
+
+  gsap.from(".first3", {
+    scrollTrigger: {
+      trigger: ".first1",
+      start: "top 40%",
+    },
+    y: -45,
+    autoAlpha: 0,
+    delay: 0.3,
+    
+    ease: "power2.out"
+  });
+
+  gsap.from(".first4", {
+    scrollTrigger: {
+      trigger: ".first1",
+      start: "top 40%",
+    },
+    y: -45,
+    autoAlpha: 0,
+    delay: 0.4,
+    
+    ease: "power2.out"
+  });
+
+    gsap.from(".first5", {
+    scrollTrigger: {
+      trigger: ".first1",
+      start: "top 40%",
+    },
+    y: -45,
+    autoAlpha: 0,
+    delay: 0.5,
+    
+    ease: "power2.out"
+  });
+
+  
+
+
+
+
+
+
+
     gsap.to(imageDivRef.current, {
       scrollTrigger: {
         trigger: imageDivRef.current,
@@ -79,6 +152,7 @@ const Agency = () => {
         }
       }
     })
+    ScrollTrigger.refresh();
   })
 
   const sectionRef = useRef(null)
@@ -95,6 +169,10 @@ const Agency = () => {
       }
     })
   }, [])
+
+
+
+
 
   return (
     <div ref={sectionRef} className='h-full bg-white' >
@@ -135,8 +213,8 @@ const Agency = () => {
       {/* everything below stays exactly the same */}
       <div className=' section-2 font-semibold tracking-wide lg:mt-20 mt-35 h-full lg:px-50 px-10 lg:text-[1vw] font-[font1] '>
         <div className='flex lg:gap-116 gap-30 lg:pb-50 pb-20 sm:pt-5'>
-          <h1>Expertise</h1>
-          <ul>
+          <h1 className='first1'>Expertise</h1>
+          <ul className='first2'>
             <li>Strategy</li>
             <li>Advertisement</li>
             <li>Branding</li>
@@ -145,10 +223,10 @@ const Agency = () => {
             <li>Content</li>
           </ul>
         </div>
-        <div className='lg:flex lg:mb-100'>
-          <p className='lg:w-320  lg:pr-7 pb-5'>Our projects are born in humility, grow in curiosity and live thanks to creativity in all its forms.</p>
-          <p className='pr-7 pb-5'>Our creative process thrives in an environment where talent is encouraged to explode. Where we feel free to be the best version of ourselves.</p>
-          <p className='pb-5'>Our culture is openness to others. Period. The entire crew participates in building an agency we are proud of.</p>
+        <div className=' lg:flex lg:mb-100'>
+          <p className='first3 lg:w-320  lg:pr-7 pb-5'>Our projects are born in humility, grow in curiosity and live thanks to creativity in all its forms.</p>
+          <p className='first4 pr-7 pb-5'>Our creative process thrives in an environment where talent is encouraged to explode. Where we feel free to be the best version of ourselves.</p>
+          <p className='first5 pb-5'>Our culture is openness to others. Period. The entire crew participates in building an agency we are proud of.</p>
         </div>
       </div>
 
