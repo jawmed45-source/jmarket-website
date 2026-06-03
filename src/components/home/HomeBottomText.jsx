@@ -1,13 +1,26 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
 
 const HomeBottomText = () => {
+useGSAP(() => {
+  gsap.from(".link1", {
+    y: 400,
+    delay: 2,
+  })
+  gsap.from(".link2", {
+    y: 400,
+    delay: 2,
+  })
+})
+
   return (
     <div className='overflow-hidden pb-2 font-[font2] flex items-center  justify-center gap-2 '>
-      <div className='lg:border-3 border-2 hover:border-[#D3FD50] hover:text-[#D3FD50] lg:h-35 flex items-center px-3 pt-1 lg:px-14 border-white rounded-full uppercase'>
-        <Link className='text-[6vw] lg:mt-6' to='/projects'>Projects</Link>
+      <div className='link1 lg:border-3 border-2 hover:border-[#D3FD50] hover:text-[#D3FD50] lg:h-35 flex items-center px-3 pt-1 lg:px-14 border-white rounded-full uppercase'>
+        <Link className=' text-[6vw] lg:mt-6' to='/projects'>Projects</Link>
       </div>
-      <div className='lg:border-3 border-2 hover:border-[#D3FD50] hover:text-[#D3FD50]  lg:h-35  flex items-center px-3 pt-1 lg:px-14 border-white rounded-full uppercase'>
+      <div className='link2 lg:border-3 border-2 hover:border-[#D3FD50] hover:text-[#D3FD50]  lg:h-35  flex items-center px-3 pt-1 lg:px-14 border-white rounded-full uppercase'>
         <Link className='text-[6vw] lg:mt-6' to='/agency'>agency</Link>
       </div>
     </div>
