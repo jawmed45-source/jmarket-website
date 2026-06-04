@@ -27,11 +27,11 @@ const HomeHeroText = () => {
     })
 
     return (
-        <div className='font-[font2] text-center font-semibold  lg:mt-5 mt-80 hover:text-[#D3FD50] relative'>
+        <div className='font-[font2] text-center font-semibold  lg:mt-5 mt-80 cursor-pointer relative'>
                 <div className='  lg:text-[10vw] text-[17vw] uppercase lg:leading-[8vw] leading-[15vw] tracking-wider flex items-center justify-center  w-full text-center overflow-y-hidden'> <div className='first1 pt-2'> Build  </div></div>
                 <div className='  lg:text-[10vw] text-[17vw] uppercase lg:leading-[8vw] leading-[15vw] tracking-wider flex items-center justify-center  w-full text-center overflow-y-hidden'> <div className='first2 pt-2' >  engine  </div></div>
                 <div className='  lg:text-[10vw] text-[17vw] uppercase lg:leading-[8vw] leading-[15vw] tracking-wider flex items-center justify-center  w-full text-center overflow-y-hidden'><div className='first3  pt-2'>  fuel  </div> <br /> </div>
-                <div className='  lg:text-[10vw] text-[17vw] uppercase lg:leading-[8vw] leading-[15vw] tracking-wider flex items-start justify-center  w-full text-center overflow-y-hidden'> <div className='first4 flex pt-2'> Gr <div className='lg:h-[7vw] lg:w-[7vw] h-[14vw] w-[14vw] rounded-full overflow-hidden' > <Video /> </div> wth. </div></div>
+                <div className='  lg:text-[10vw] text-[17vw] uppercase lg:leading-[8vw] leading-[15vw] tracking-wider flex items-start justify-center  w-full text-center overflow-y-hidden'> <div className='first4 flex pt-2'> Gr <div className='lg:h-[7vw] lg:w-[7vw] h-[14vw] w-[14vw] rounded-full overflow-hidden border-white border-14' > <Video /> </div> wth. </div></div>
         </div>
     )
 }

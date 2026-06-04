@@ -1,19 +1,28 @@
 import React, { useContext, useRef } from 'react'
 import { NavbarContext } from '../../context/Navcontext'
 import { NavbarColorContext } from '../../context/Navcontext'
-
+import { useNavigate } from 'react-router-dom'
+ 
 const Navbar = () => {
   const navGreenRef = useRef(null)
   const navGreenline1 = useRef(null)
   const navGreenline2 = useRef(null)
   const { NavOpen, setNavOpen } = useContext(NavbarContext)
   const { NavColor, setNavColor } = useContext(NavbarColorContext)
-
-  
-
+  const navigate = useNavigate()
+ 
+  const handleNavClick = (path) => {
+    setNavOpen(false)
+    setTimeout(() => {
+      navigate(path)
+    }, 800)
+  }
+ 
   return (
     <div className='z-4  flex justify-between items-start top-0 fixed w-full'>
-      <div className='w-22 h-16 lg:m-4 m-2'>
+      <div onClick={()=>{
+        handleNavClick('/')
+      }} className='w-22 h-16 lg:m-4 m-2 cursor-pointer'>
         <img src={NavColor} alt="Logo" className=' h-full w-full' />
       </div>
       <div onClick={()=>{
@@ -47,5 +56,5 @@ const Navbar = () => {
     </div>
   )
 }
-
+ 
 export default Navbar
