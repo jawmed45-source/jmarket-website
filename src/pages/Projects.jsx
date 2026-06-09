@@ -26,9 +26,26 @@ const Projects = () => {
   ]
 
   const containerRef = useRef(null)
+  const headingRef = useRef(null)
+  const projectCardRef = useRef(null)
 
   useGSAP(() => {
     const heroes = gsap.utils.toArray('.hero')
+    
+
+    //first animation on page load
+    // target ref directly instead of class
+    gsap.from(headingRef.current, {
+      y: -45,
+      delay: 2.15
+    })
+
+    //first animation on page load
+    gsap.from(projectCardRef.current, {
+      x: -400,
+      delay: 2.17
+    })
+
 
     // Responsive target height based on screen width
     const getTargetHeight = () => {
@@ -79,18 +96,18 @@ const Projects = () => {
   }, { scope: containerRef })
 
   return (
-    <div className='lg:p-4 p-2 mb-[100vh] text-black bg-white w-full'>
-      <div className='pt-[45vh]'>
-        <h2 className='font-[font2] lg:text-[9.5vw] text-6xl uppercase'>Projects</h2>
+    <div className='lg:p-4 p-2 mb-[100vh] text-black bg-white w-full h-auto'>
+      <div className='pt-[45vh] relative '>
+        <h2 ref={headingRef} className='heading2 font-[font2] lg:text-[9.5vw] text-6xl uppercase overflow-hidden '>Projects</h2>
       </div>
       <div ref={containerRef} className='lg:mt-0  lol w-full'>
         {projects.map(function (elem, idx) {
           return (
             <div
               key={idx}
-              className='hero w-full overflow-hidden mb-4 flex lg:flex-row  lg:gap-4 gap-2'
+              className='relative hero w-full overflow-hidden mb-4 flex lg:flex-row  lg:gap-4 gap-2'
             >
-              <ProjectCard image1={elem.image1} image2={elem.image2} />
+              <ProjectCard ref={projectCardRef} image1={elem.image1} image2={elem.image2}/>
             </div>
           )
         })}

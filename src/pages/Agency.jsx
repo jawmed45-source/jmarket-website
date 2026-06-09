@@ -3,6 +3,7 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 import { useEffect, useRef } from 'react'
+import Footer from '../components/footer/Footer'
 
 // move outside component
 gsap.registerPlugin(ScrollTrigger)
@@ -176,6 +177,7 @@ const Agency = () => {
 
   return (
     <div ref={sectionRef} className='h-full bg-white' >
+      <div>
       <div className='section-1 p-1' >
         <div
           ref={imageDivRef}
@@ -291,6 +293,10 @@ const Agency = () => {
             </div>
           ))}
         </div>
+      </div>
+      </div>
+      <div>
+        {/* <Footer /> */}
       </div>
 
     </div>
