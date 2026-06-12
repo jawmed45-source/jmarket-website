@@ -153,17 +153,17 @@ const FullScreenNav = () => {
         <div className=''>
 
           <div id='Projects' onClick={() => handleNavClick('/projects')} className='  h-full origin-top link relative border-t-1 border-white lg:mt-0 mt-30'>
-            <h1 className='font-[font2] lg:text-[6vw] text-[12vw] text-center uppercase font-semibold   ' >projects</h1>
+            <h1 className='font-[font2] lg:text-[5vw] text-[12vw] text-center uppercase font-semibold   ' >projects</h1>
             <div onClick={() => handleNavClick('/projects')} className='  moveLink  absolute lg:flex none top-0 bg-[#D3FD50] text-black'>
               <div className='moveX hidden lg:flex items-center cursor-pointer' >
-                <h2 className='whitespace-nowrap font-[font2] text-[6vw] text-center uppercase font-semibold '>to See Everything ★</h2>
-                <h2 className='whitespace-nowrap  font-[font2] text-[6vw] text-center uppercase font-semibold '>to See Everything ★</h2>
+                <h2 className='whitespace-nowrap font-[font2] text-[5vw] text-center uppercase font-semibold '>to See Everything ★</h2>
+                <h2 className='whitespace-nowrap  font-[font2] text-[5vw] text-center uppercase font-semibold '>to See Everything ★</h2>
 
 
               </div>
               <div className='moveX  hidden lg:flex items-center cursor-pointer'>
-                <h2 className='whitespace-nowrap font-[font2] text-[6vw] text-center uppercase font-semibold '>to See Everything ★</h2>
-                <h2 className='whitespace-nowrap  font-[font2] text-[6vw] text-center uppercase font-semibold '>to See Everything ★</h2>
+                <h2 className='whitespace-nowrap font-[font2] text-[5vw] text-center uppercase font-semibold '>to See Everything ★</h2>
+                <h2 className='whitespace-nowrap  font-[font2] text-[5vw] text-center uppercase font-semibold '>to See Everything ★</h2>
 
               </div>
             </div>
@@ -171,19 +171,19 @@ const FullScreenNav = () => {
 
 
           <div id='Agency' onClick={() => handleNavClick('/agency')} className='origin-top link relative border-t-1 border-white'>
-            <h1 className='font-[font2] lg:text-[6vw] text-[12vw] text-center uppercase font-semibold '>Agency</h1>
+            <h1 className='font-[font2] lg:text-[5vw] text-[12vw] text-center uppercase font-semibold '>Agency</h1>
             <div onClick={() => handleNavClick('/agency')} className=' moveLink absolute flex top-0 bg-[#D3FD50] text-black'>
               <div className='moveX hidden lg:flex items-center cursor-pointer'>
-                <h2 className='whitespace-nowrap font-[font2] text-[6vw] text-center uppercase font-semibold '>to know Everything</h2>
+                <h2 className='whitespace-nowrap font-[font2] text-[5vw] text-center uppercase font-semibold '>to know Everything</h2>
                 <img className='h-17 w-60 object-cover rounded-full shrink-0' src="/images/jawad1.png" alt="" />
-                <h2 className='whitespace-nowrap  font-[font2] text-[6vw] text-center uppercase font-semibold '>to know Everything</h2>
+                <h2 className='whitespace-nowrap  font-[font2] text-[5vw] text-center uppercase font-semibold '>to know Everything</h2>
                 <img className='h-17 w-60 object-cover rounded-full shrink-0' src="/images/mannan.png" alt="" />
 
               </div>
               <div className='moveX hidden lg:flex items-center'>
-                <h2 className='whitespace-nowrap font-[font2] text-[6vw] text-center uppercase font-semibold '>to know Everything</h2>
+                <h2 className='whitespace-nowrap font-[font2] text-[5vw] text-center uppercase font-semibold '>to know Everything</h2>
                 <img className='h-17 w-60 object-cover rounded-full shrink-0' src="/images/jawad1.png" alt="" />
-                <h2 className='whitespace-nowrap  font-[font2] text-[6vw] text-center uppercase font-semibold '>to know Everything</h2>
+                <h2 className='whitespace-nowrap  font-[font2] text-[5vw] text-center uppercase font-semibold '>to know Everything</h2>
                 <img className='h-17 w-60 object-cover rounded-full shrink-0' src="/images/mannan.png" alt="" />
 
               </div>
@@ -193,16 +193,16 @@ const FullScreenNav = () => {
 
 
           <div id='Contact' onClick={() => handleNavClick('/contact')} className=' origin-top link relative border-t-1 border-white'>
-            <h1 className='font-[font2] lg:text-[6vw] text-[12vw] text-center uppercase font-semibold '>contact</h1>
+            <h1 className='font-[font2] lg:text-[5vw] text-[12vw] text-center uppercase font-semibold '>contact</h1>
             <div onClick={() => handleNavClick('/contact')} className=' moveLink absolute flex top-0 bg-[#D3FD50] text-black'>
               <div className='moveX hidden lg:flex items-center cursor-pointer'>
-                <h2 className='whitespace-nowrap font-[font2] text-[6vw] text-center uppercase font-semibold '>to contact us ☎</h2>
-                <h2 className='whitespace-nowrap  font-[font2] text-[6vw] text-center uppercase font-semibold '>to contact us ☎</h2>
+                <h2 className='whitespace-nowrap font-[font2] text-[5vw] text-center uppercase font-semibold '>to contact us ☎</h2>
+                <h2 className='whitespace-nowrap  font-[font2] text-[5vw] text-center uppercase font-semibold '>to contact us ☎</h2>
 
               </div>
               <div className='moveX hidden lg:flex items-center'>
-                <h2 className='whitespace-nowrap font-[font2] text-[6vw] text-center uppercase font-semibold '>to contact us ☎</h2>
-                <h2 className='whitespace-nowrap  font-[font2] text-[6vw] text-center uppercase font-semibold '>to contact us☎</h2>
+                <h2 className='whitespace-nowrap font-[font2] text-[5vw] text-center uppercase font-semibold '>to contact us ☎</h2>
+                <h2 className='whitespace-nowrap  font-[font2] text-[5vw] text-center uppercase font-semibold '>to contact us☎</h2>
 
               </div>
             </div>
@@ -210,19 +210,19 @@ const FullScreenNav = () => {
 
 
           <div id='Blog' onClick={() => handleNavClick('/blog')} className='origin-top link relative border-y-1 border-white'>
-            <h1 className='font-[font2] lg:text-[6vw] text-[12vw] text-center uppercase font-semibold '>blog</h1>
+            <h1 className='font-[font2] lg:text-[5vw] text-[12vw] text-center uppercase font-semibold '>blog</h1>
             <div onClick={() => handleNavClick('/blog')} className=' moveLink absolute flex top-0 bg-[#D3FD50] text-black'>
               <div className='moveX hidden lg:flex items-center cursor-pointer'>
-                <h2 className='whitespace-nowrap font-[font2] text-[6vw] text-center uppercase font-semibold '>to learn anything</h2>
+                <h2 className='whitespace-nowrap font-[font2] text-[5vw] text-center uppercase font-semibold '>to learn anything</h2>
                 <img className='h-17 w-60 object-cover rounded-full shrink-0' src="/images/jawad1.png" alt="" />
-                <h2 className='whitespace-nowrap  font-[font2] text-[6vw] text-center uppercase font-semibold '>to learn anything</h2>
+                <h2 className='whitespace-nowrap  font-[font2] text-[5vw] text-center uppercase font-semibold '>to learn anything</h2>
                 <img className='h-17 w-60 object-cover rounded-full shrink-0' src="/images/mannan.png" alt="" />
 
               </div>
               <div className='moveX hidden lg:flex items-center'>
-                <h2 className='whitespace-nowrap font-[font2] text-[6vw] text-center uppercase font-semibold '>to learn anything</h2>
+                <h2 className='whitespace-nowrap font-[font2] text-[5vw] text-center uppercase font-semibold '>to learn anything</h2>
                 <img className='h-17 w-60 object-cover rounded-full shrink-0' src="/images/jawad1.png" alt="" />
-                <h2 className='whitespace-nowrap  font-[font2] text-[6vw] text-center uppercase font-semibold '>to learn anything</h2>
+                <h2 className='whitespace-nowrap  font-[font2] text-[5vw] text-center uppercase font-semibold '>to learn anything</h2>
                 <img className='h-17 w-60 object-cover rounded-full shrink-0' src="/images/mannan.png" alt="" />
 
               </div>
@@ -230,9 +230,9 @@ const FullScreenNav = () => {
           </div>
         </div>
 
-          <div className='pt-5 pl-5'>
+          {/* <div className='pt-5 pl-5'>
             <Montreal />
-          </div>
+          </div> */}
 
 
         
