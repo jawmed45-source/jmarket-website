@@ -127,7 +127,7 @@ const FullScreenNav = () => {
 
    
   return (
-    <div ref={fullScreenRef} id='fullscreennav' className='fullscreennav hidden  z-200 h-screen w-full overflow-hidden text-white  absolute'>
+    <div ref={fullScreenRef} id='fullscreennav' className='fullscreennav hidden  z-200 h-screen w-full overflow-hidden text-white  fixed'>
       <div className='h-screen w-full fixed'>
         <div className='h-full w-full flex'>
           <div className='stairing h-full w-1/5 bg-black'></div>

@@ -27,7 +27,7 @@ const HomeHeroText = () => {
     })
 
     return (
-        <div className='font-[font2] text-center font-semibold  lg:mt-5 mt-80 cursor-pointer relative'>
+        <div className='font-[font2] text-center font-semibold  lg:mt-5 mt-60 cursor-pointer relative'>
                 <div className='  lg:text-[10vw] text-[17vw] uppercase lg:leading-[8vw] leading-[15vw] tracking-wider flex items-center justify-center  w-full text-center overflow-y-hidden'> <div className='first1 pt-2'> Build  </div></div>
                 <div className='  lg:text-[10vw] text-[17vw] uppercase lg:leading-[8vw] leading-[15vw] tracking-wider flex items-center justify-center  w-full text-center overflow-y-hidden'> <div className='first2 pt-2' >  engine  </div></div>
                 <div className='  lg:text-[10vw] text-[17vw] uppercase lg:leading-[8vw] leading-[15vw] tracking-wider flex items-center justify-center  w-full text-center overflow-y-hidden'><div className='first3  pt-2'>  fuel  </div> <br /> </div>
