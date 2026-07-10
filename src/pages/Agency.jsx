@@ -165,8 +165,12 @@ const Agency = () => {
       scrollTrigger: {
         trigger: ".section-2",
         start: 'top center',
-        end: 'bottom center',
+        end: 'top center',
         scrub: true,
+        // markers: true,
+        // delay: 0.1,
+        // duration: 1,
+        // ease: "power2.out"
       }
     })
   }, [])
